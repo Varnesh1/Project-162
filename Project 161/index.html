@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+    
+    <script src="./bowling.js"></script>
+  </head>
+  <body>
+    <a-scene id="scene">
+      <a-assets>        
+        <a-asset-item
+          id="bowling"
+          src="./bowling_pin/scene.gltf"
+        ></a-asset-item>
+        
+      </a-assets>
+      <a-entity light="type: ambient; color: yellow; intensity:0.5"></a-entity>
+      <a-entity
+        id="camera"
+        camera
+        position="0 1.6 0"
+        wasd-controls
+        look-controls="pointerLockEnabled: false"        
+      >
+
+        <a-cursor></a-cursor>        
+      </a-entity>
+
+      <a-entity ball></a-entity>
+
+      <a-plane
+        id="ground"
+        repeat="5 5"
+        position="0 1 0"
+        rotation="-90 0 0"
+        height="200"
+        width="200"
+        color="red"
+        static-body
+        visible="true"
+      >
+      </a-plane>
+      <a-entity
+      id="bowling"
+      gltf-model="#bowling"
+      position="0 1 3"
+      rotation="0 180 0"
+      scale="1 1 1"          
+    >
+  </a-entity>
+  <a-entity
+  id="bowling"
+  gltf-model="#bowling"
+  position="0 1 3"
+  rotation="0 180 0"
+  scale="1 1 1"          
+>
+</a-entity>
+<a-entity
+id="bowling"
+gltf-model="#bowling"
+position="0 1 3"
+rotation="0 180 0"
+scale="1 1 1"          
+>
+</a-entity>
+<a-entity
+id="bowling"
+gltf-model="#bowling"
+position="0 1 3"
+rotation="0 180 0"
+scale="1 1 1"          
+>
+</a-entity>
+<a-entity
+id="bowling"
+gltf-model="#bowling"
+position="0 1 3"
+rotation="0 180 0"
+scale="1 1 1"          
+>
+</a-entity>
+<a-entity
+id="bowling"
+gltf-model="#bowling"
+position="0 1 3"
+rotation="0 180 0"
+scale="1 1 1"          
+>
+</a-entity>
+<a-entity
+id="bowling"
+gltf-model="#bowling"
+position="0 1 3"
+rotation="0 180 0"
+scale="1 1 1"          
+>
+</a-entity>
+
+    </a-scene>
+  </body>
+</html>
